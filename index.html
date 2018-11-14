@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Factory Data Collection</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-clockpicker.css">
+    <script async src="scripts/brand_new_script.js"></script>
+    <script src="scripts/Chart.min.js"></script>
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/jquery.dataTables.min.js"></script>
+    <script src="scripts/jquery-clockpicker.min.js"></script>
+</head>
+
+<body onload="ProductsAndTheirQuantity()">
+    <div class="header">
+        <h1>ЗТТА. Производственный учёт</h1>
+    </div>
+
+    <div class="navbar">
+        <a onclick="ProductsAndTheirQuantity()" href="#">Отчёт об изготовлении</a>
+        <a onclick="PerformanceOfMachines()" href="#">Отчёт о производительности</a>
+        <!--a href="#" class="right">Test</a-->
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div class="custom-select" style="width:100%;">
+                <p id="dropWorkshop"></p>
+                <p id="dropMachine"></p>
+                <p id="dropProduct"></p>
+                <p id="dropDateStart"></p>
+                <p id="dropDateFinish"></p>
+                <p id="btnShow"></p>
+                <p id="btnShowJibs"></p>
+            </div>
+        </div>
+        <div class="main">
+            <p id="showData"></p>
+            <p id="additionalData"></p>
+        </div>
+    </div>
+</body>
+</html>
